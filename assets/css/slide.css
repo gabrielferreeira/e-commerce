@@ -1,0 +1,133 @@
+main {
+    margin-top: 100px;
+}
+
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-conteiner {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-conteiner input,
+.mob {
+    display: none;
+}
+
+.slide-img {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: .3s;
+}
+
+.slide-img img {
+    width: 100%;
+}
+
+.manual,
+.auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 36%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual .m-btn,
+.auto div {
+    border: 1px solid var(--dark);
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.manual .m-btn:not(:last-child),
+.auto div:not(:last-child) {
+    margin-right: 6px;
+}
+
+.manual .m-btn:hover {
+    background-color: var(--dark);
+}
+
+#bullet1:checked~.auto .a-btn1,
+#bullet2:checked~.auto .a-btn2,
+#bullet3:checked~.auto .a-btn3 {
+    background-color: var(--dark);
+}
+
+#bullet1:checked~.one {
+    margin-left: 0%;
+}
+
+#bullet2:checked~.one {
+    margin-left: -25%;
+}
+
+#bullet3:checked~.one {
+    margin-left: -50%;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns-arrows {
+    position: absolute;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--light);
+    cursor: pointer;
+}
+
+.btns-arrows i {
+    color: var(--dark);
+    font-size: 1.2rem;
+}
+
+.back {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .desk {
+        display: none;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .auto,
+    .manual {
+        margin-top: 60%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .back {
+        left: 15px;
+    }
+
+    .next {
+        right: 15px;
+    }
+}

@@ -1,0 +1,79 @@
+.main {
+    padding: 2rem 0;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: center;
+}
+
+.cards-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.cards-products .cards-products-itens {
+    background-color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cards-products .cards-products-itens .cards-img {
+    width: 230px;
+}
+
+.cards-products .cards-products-itens .cards-img img {
+    width: 100%;
+}
+
+.cards-products .cards-products-itens .cards-content .title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+.cards-products .cards-products-itens .cards-content .de {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--dark);
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.cards-products .cards-products-itens .cards-content .por {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.cards-products .cards-products-itens .cards-content .parcela {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--blue);
+    margin-top: 10px;
+}
+
+.cards-products .cards-products-itens .cards-btn {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cards-products .cards-products-itens .cards-btn button {
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 8px 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.cards-products .cards-products-itens .cards-btn button:hover {
+    background-color: var(--blue2);
+}

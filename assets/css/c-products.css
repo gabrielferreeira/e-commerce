@@ -1,0 +1,145 @@
+.c-products {
+    padding: 3rem 0;
+}
+
+.category-p {
+    padding: 2rem 0;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.category h2 {
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.category .all {
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.category span:hover {
+    color: var(--blue2);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.products .products-itens {
+    position: relative;
+    background-color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.products .products-itens .save {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.products .products-itens .save:hover {
+    background-color: var(--blue2);
+}
+
+.products .products-itens .save i {
+    color: var(--light);
+}
+
+.products .products-itens .img-p img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.products .products-itens .desc-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.products .products-itens .desc-p .desc {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.products .products-itens .desc-p .de {
+    color: var(--dark2);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.products .products-itens .desc-p .por {
+    color: var(--dark2);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.products .products-itens .desc-p .parcela {
+    color: var(--blue2);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.products .products-itens .btn-add {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.products .products-itens .btn-add button {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 8px 1rem;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.products .products-itens .btn-add button:hover {
+    background-color: var(--blue2);
+}
+
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

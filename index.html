@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A GL Variedades é a sua mais nova loja de produtos importados, como o próprio nome já diz VARIEDADES, temos infinidades de produtos e diversos gostos.">
+    <meta name="keywords"
+        content="variedades, perfumes, camisetas, camisas, bermudas, moletons, cascos, tênis, sandálias, chinelos, masculino, feminino, moda praia, óculos, bonés">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <title>GL Variedades - Oficial</title>
+</head>
+
+<body>
+    <header>
+        <div class="margin">
+            <div class="nav">
+                <a href="index.html" class="logo">
+                    <div class="cart"><i class="bi bi-cart cart"></i></div>
+                    </i> GL Shopp
+                </a>
+
+                <div class="header-icons">
+                    <div>
+                        <a href="assets/account/cadastro.html">Cadastrar</a>
+                        <a href="assets/account/login.html">login</a>
+                        <div class="perfil">
+                            <i title="Perfil" class="bi bi-person-circle" onclick="abrirConfig()"></i>
+
+                            <div class="account-itens" id="account-itens">
+                                <div class="ver-perfil">
+                                    <a href="#">Ver perfil</a>
+
+                                    <i class="bi bi-x" onclick="fecharConfig()"></i>
+                                </div>
+                                <div class="separetor"></div>
+                                <a href="#">Favoritos <i class="bi bi-heart"></i></a>
+                                <a href="#">Suas compras <i class="bi bi-cart2"></i></a>
+
+                                <div class="theme">
+                                    <p>Modo escuro</p>
+
+                                    <input type="checkbox" name="change-theme" id="change-theme">
+                                    <label for="change-theme">
+                                        <i class="bi bi-sun"></i>
+                                        <i class="bi bi-moon"></i>
+                                    </label>
+                                </div>
+
+                                <div class="logout">
+                                    <a href="#">Sair <i class="bi bi-box-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="not-sacola">
+                            <i title="Carrinho de Compras" class="bi bi-bag sacola" onclick="openCar()"></i>
+                            <div class="qtd-sacola" id="qtd-sacola"></div>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <input type="text" placeholder="Ex:. Camisas, moletons...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="sidebar-car" id="carrinho">
+        <div class="nav-car">
+            <i class="bi bi-x-lg" onclick="exitCar()"></i>
+            <h2>Carrinho</h2>
+        </div>
+
+        <div class="carrinho">
+            <h2>Produtos</h2>
+        </div>
+
+        <div class="summary">
+            <h2>Resumo da compra</h2>
+
+            <div class="separetor"></div>
+
+            <div class="desconto">
+                <p>Desconto:</p>
+                <span class="totalDesconto">-</span>
+            </div>
+
+            <div class="total">
+                <p>Subtotal:</p>
+                <span class="subtotal"></span>
+            </div>
+        </div>
+
+        <div class="finalizar-btn">
+            <button>Finalizar compra</button>
+        </div>
+
+    </div>
+
+    <div class="details" id="details">
+        <div class="details-content">
+            <button onclick="fecharDetails()">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <div class="details-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis at tenetur temporibus reiciendis ut
+                    hic autem. Quod, hic a fugiat vitae quidem eveniet minima laboriosam aspernatur voluptates cum velit
+                    voluptas?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="slider">
+            <div class="slider-conteiner">
+                <input type="radio" name="bullet-radio" id="bullet1">
+                <input type="radio" name="bullet-radio" id="bullet2">
+                <input type="radio" name="bullet-radio" id="bullet3">
+
+                <div class="arrows">
+                    <button class="btns-arrows back" onclick="back()">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="btns-arrows next" onclick="next()">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slide-img one">
+                    <img class="desk" src="assets/imagens/1700X600-DESK-1.svg" alt="img1-desk">
+                    <img class="mob" src="assets/imagens/1040X600-MOB-1.svg" alt="img1-mob">
+                </div>
+
+                <div class="slide-img">
+                    <img class="desk" src="assets/imagens/1700X600-DESK-2.svg" alt="img2-desk">
+                    <img class="mob" src="assets/imagens/1040X600-MOB-2.svg" alt="img2-mob">
+                </div>
+
+                <div class="slide-img">
+                    <a href="assets/categorias/acessorios/acess.html">
+                        <img class="desk" src="assets/imagens/1700X600-DESK-3.svg" alt="img3-desk">
+                    </a>
+                    <a href="assets/categorias/acessorios/acess.html">
+                        <img class="mob" src="assets/imagens/1040X600-MOB-3.svg" alt="img3-mob">
+                    </a>
+                </div>
+
+                <div class="auto">
+                    <div class="a-btn1"></div>
+                    <div class="a-btn2"></div>
+                    <div class="a-btn3"></div>
+                </div>
+
+                <div class="manual">
+                    <label for="bullet1" class="m-btn"></label>
+                    <label for="bullet2" class="m-btn"></label>
+                    <label for="bullet3" class="m-btn"></label>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="c-products">
+            <div class="center">
+                <div class="category-p" id="categoriasContainer"></div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="center">
+                <h2 class="info-t">Mais informações</h2>
+
+                <div class="info-p">
+                    <div class="info-itens">
+                        <div class="info-icon">
+                            <i class="bi bi-credit-card"></i>
+                        </div>
+                        <div class="info-desc">
+                            <h2>Pagamento</h2>
+                            <p>Você pode pagar em até 3X sem juros no cartão de crédito, no débito, via pix ou boleto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-itens">
+                        <div class="info-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="info-desc">
+                            <h2>Frete</h2>
+                            <p>O frete é calculado pela transportadora de acordo com sua região. Nas compras acima de
+                                R$50 o
+                                frete é totalmente gratis.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-itens">
+                        <div class="info-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="info-desc">
+                            <h2>Segurança</h2>
+                            <p>Buscamos deixar os cliente 100% seguro, pensando nisso, criamos um sistema de entrega
+                                rápida e com garantia da nossa empresa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="center">
+            <section class="contato">
+                <div class="info-contato">
+                    <div class="info-contato-itens">
+                        <h2>Atendimento</h2>
+
+                        <p>(00) 9 0000-0000</p>
+                        <p>(00) 9 0000-0000</p>
+                        <p>glshopp@glshopp.com.br</p>
+                    </div>
+
+                    <div class="info-contato-itens">
+                        <h2>Sobre</h2>
+
+                        <a href="#">Sobre a GL Shopp</a>
+                        <a href="#">Termos de privacidade</a>
+                        <a href="#">Devolução</a>
+                        <a href="#">Blog</a>
+                    </div>
+
+                    <div class="info-contato-itens">
+                        <h2>Sigam-nos</h2>
+
+                        <a class="social" href="#" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a class="social" href="#" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a class="social" href="#" target="_blank">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="copy">
+            <p><span id="year"></span> | GL Variedades - Todos os direitos reservados.</p>
+        </section>
+    </footer>
+
+
+</body>
+<script src="assets/js/slide.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/year.js"></script>
+<script src="assets/js/sidebar.js"></script>
+<script src="assets/js/account.js"></script>
+<script src="assets/js/details.js"></script>
+<script src="assets/js/itens.js"></script>
+<script src="assets/js/produtosInit.js"></script>
+<script src="assets/js/categoriasAll.js"></script>
+
+</html>

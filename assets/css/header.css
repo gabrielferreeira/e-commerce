@@ -1,0 +1,212 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    background-color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+header .nav .logo {
+    display: flex;
+    align-items: center;
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header .nav .logo .cart {
+    transform: rotate(-35deg);
+    margin-right: 2px;
+}
+
+header .nav .logo .cart i {
+    color: var(--blue);
+}
+
+header .nav .header-icons .search {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .nav .header-icons .search input {
+    width: 100%;
+    height: 100%;
+    color: var(--dark);
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+header .search i {
+    color: var(--dark);
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.not-sacola {
+    position: relative;
+}
+
+.not-sacola .qtd-sacola {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background-color: var(--blue);
+    color: var(--light);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+header .nav .sacola {
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header .nav .header-icons>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .nav .header-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+header .nav .header-icons a {
+    color: var(--light);
+    background-color: var(--blue);
+    padding: 8px 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+}
+
+header .nav .header-icons a:hover {
+    background-color: var(--blue2);
+}
+
+header .nav .header-icons .perfil {
+    position: relative;
+}
+
+header .nav .header-icons .perfil .account-itens {
+    position: absolute;
+    top: 35px;
+    right: -20px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--light);
+}
+
+header .nav .header-icons .perfil .account-itens .ver-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav .header-icons .perfil .account-itens a {
+    background-color: transparent;
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0;
+}
+
+header .nav .header-icons .perfil .account-itens .ver-perfil i {
+    color: var(--dark);
+}
+
+header .nav .header-icons .perfil .account-itens .separetor {
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark);
+}
+
+header .nav .header-icons .perfil i {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+header .nav .header-icons .perfil .theme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav .header-icons .perfil .theme p {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header .nav .header-icons .perfil .theme i {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.theme input[type="checkbox"] {
+    display: none;
+}
+
+.bi-moon {
+    display: none;
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header .nav a {
+        font-size: 1.2rem;
+    }
+
+    header .nav .sacola {
+        font-size: 1rem;
+    }
+
+}

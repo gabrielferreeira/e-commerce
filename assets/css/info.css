@@ -1,0 +1,53 @@
+.info {
+    padding: 3rem 0;
+}
+
+.info .info-t {
+    text-align: center;
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.info .info-p {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.info .info-p .info-itens {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.info .info-p .info-itens .info-icon i {
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+.info .info-p .info-itens .info-desc h2 {
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.info .info-p .info-itens .info-desc p {
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .info .info-p {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .info .info-p {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

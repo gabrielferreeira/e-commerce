@@ -1,0 +1,84 @@
+.conteiner-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 2%;
+}
+
+.conteiner-cadastro h1 {
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.conteiner-cadastro form {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--light);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
+}
+
+.conteiner-cadastro form .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.conteiner-cadastro form .form-control label {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.conteiner-cadastro form .form-control input {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+    color: var(--dark);
+    margin-top: 10px;
+}
+
+.conteiner-cadastro form .form-control span {
+    text-align: right;
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.conteiner-cadastro form .form-control span a {
+    color: var(--blue);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.conteiner-cadastro form .form-control span a:hover {
+    color: var(--blue2);
+}
+
+.conteiner-cadastro form .btn-cadastro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.conteiner-cadastro form .btn-cadastro button {
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 8px 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.conteiner-cadastro form .btn-cadastro button:hover {
+    background-color: var(--blue2);
+}

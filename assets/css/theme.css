@@ -1,0 +1,122 @@
+.dark,
+.dark header {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.dark .info-contato .info-contato-itens .social {
+    background-color: var(--light);
+}
+
+.dark .info-contato .info-contato-itens .social i {
+    color: var(--dark);
+}
+
+.dark .manual .m-btn,
+.dark .auto div,
+.dark .conteiner-login form .form-control input,
+.dark .over-desc .view-desc>div,
+.dark .conteiner-cadastro form .form-control input {
+    border: 1px solid var(--light);
+}
+
+.dark .manual .m-btn:hover {
+    background-color: var(--light);
+}
+
+.dark #bullet1:checked~.auto .a-btn1,
+.dark #bullet2:checked~.auto .a-btn2,
+.dark #bullet3:checked~.auto .a-btn3,
+.dark .nav .header-icons .perfil .account-itens .separetor {
+    background-color: var(--light);
+}
+
+.dark footer {
+    border-top: 1px solid var(--light);
+}
+
+.dark .carrinho .carrinho-item,
+.dark .summary .separetor {
+    border-bottom: 1px solid var(--light);
+}
+
+.dark header .center .nav a,
+.dark header .center .nav .search input,
+.dark header .center .nav .search input::placeholder,
+.dark .c-products .category-p .category h2,
+.dark .c-products .category-p .products .products-itens .desc-p .desc,
+.dark .info .info-t,
+.dark .info .info-p .info-itens .info-icon i,
+.dark .info .info-p .info-itens .info-desc h2,
+.dark .info .info-p .info-itens .info-desc p,
+.dark .info-contato-itens h2,
+.dark .info-contato-itens a,
+.dark .info-contato-itens p,
+.dark .copy p,
+.dark header .nav .header-icons i,
+.dark header .nav .search i,
+.dark .products .products-itens .desc-p .de,
+.dark .products .products-itens .desc-p .por,
+.dark header .search input,
+.dark header .search i,
+.dark header .search input::placeholder,
+.dark header .nav .logo,
+.dark .info-contato .info-contato-itens .social i,
+.dark .nav .header-icons .perfil .account-itens .ver-perfil a,
+.dark .nav .header-icons .perfil .account-itens .ver-perfil i,
+.dark .nav .header-icons .perfil .account-itens a,
+.dark .nav .header-icons .perfil .account-itens .theme p,
+.dark .nav .header-icons .perfil .account-itens label i,
+.dark .conteiner-login h1,
+.dark .conteiner-login form .form-control label,
+.dark .conteiner-login form .form-control input,
+.dark .conteiner-login form .form-control span,
+.dark .conteiner-login form .or,
+.dark .over-desc .view-desc p,
+.dark .sidebar-car .nav-car i,
+.dark .sidebar-car .nav-car h2,
+.dark .carrinho h2,
+.dark .carrinho .carrinho-item .content-car .desc-car .name-product,
+.dark .carrinho .carrinho-item .price-product p,
+.dark .carrinho .carrinho-item .dell-car i,
+.dark .summary h2,
+.dark .summary .desconto p,
+.dark .summary .total p,
+.dark .summary .desconto span,
+.dark .summary .total span,
+.dark .conteiner-cadastro h1,
+.dark .conteiner-cadastro form .form-control label,
+.dark .conteiner-cadastro form .form-control input,
+.dark .conteiner-cadastro form .form-control span,
+.dark main h2,
+.dark .cards-products .cards-products-itens .cards-content .title,
+.dark .cards-products .cards-products-itens .cards-content .de,
+.dark .cards-products .cards-products-itens .cards-content .por {
+    color: var(--light);
+}
+
+.dark .nav .header-icons .perfil .account-itens,
+.dark .conteiner-login form,
+.dark .over-desc .view-desc,
+.dark .sidebar-car,
+.dark .carrinho,
+.dark .summary,
+.dark .conteiner-cadastro form,
+.dark .cards-products .cards-products-itens {
+    background-color: var(--dark);
+}
+
+.dark .products .products-itens,
+.dark .carrinho h2 {
+    background-color: var(--dark2);
+}
+
+.dark::-webkit-scrollbar-thumb,
+.dark .info-contato .info-contato-itens .social,
+.dark .carrinho::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+.dark .info .info-p .info-itens .info-icon i {
+    color: var(--blue);
+}

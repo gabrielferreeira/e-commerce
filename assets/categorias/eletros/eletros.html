@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A GL Variedades é a sua mais nova loja de produtos importados, como o próprio nome já diz VARIEDADES, temos infinidades de produtos e diversos gostos.">
+    <meta name="keywords"
+        content="variedades, perfumes, camisetas, camisas, bermudas, moletons, cascos, tênis, sandálias, chinelos, masculino, feminino, moda praia, óculos, bonés">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../../../assets/css/all.css">
+
+    <title>Eletrônicos | GL Variedades - Oficial</title>
+</head>
+
+<body>
+    <header>
+        <div class="margin">
+            <div class="nav">
+                <a href="../../../index.html" class="logo">GL Shopp</a>
+
+                <div class="header-icons">
+                    <div>
+                        <a href="../../../assets/account/cadastro.html">Cadastrar</a>
+                        <a href="../../../assets/account/login.html">login</a>
+                        <div class="perfil">
+                            <i title="Perfil" class="bi bi-person-circle" onclick="abrirConfig()"></i>
+
+                            <div class="account-itens" id="account-itens">
+                                <div class="ver-perfil">
+                                    <a href="#">Ver perfil</a>
+
+                                    <i class="bi bi-x" onclick="fecharConfig()"></i>
+                                </div>
+                                <div class="separetor"></div>
+                                <a href="#">Favoritos <i class="bi bi-heart"></i></a>
+                                <a href="#">Suas compras <i class="bi bi-cart2"></i></a>
+
+                                <div class="theme">
+                                    <p>Modo escuro</p>
+
+                                    <input type="checkbox" name="change-theme" id="change-theme">
+                                    <label for="change-theme">
+                                        <i class="bi bi-sun"></i>
+                                        <i class="bi bi-moon"></i>
+                                    </label>
+                                </div>
+
+                                <div class="logout">
+                                    <a href="#">Sair <i class="bi bi-box-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="not-sacola">
+                            <i title="Carrinho de Compras" class="bi bi-bag sacola" onclick="openCar()"></i>
+                            <div class="qtd-sacola">1</div>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <input type="text" placeholder="Ex:. Camisas, moletons...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="sidebar-car" id="carrinho">
+        <div class="nav-car">
+            <i class="bi bi-x-lg" onclick="exitCar()"></i>
+            <h2>Carrinho</h2>
+        </div>
+
+        <div class="carrinho">
+            <h2>Produtos</h2>
+        </div>
+
+        <div class="summary">
+            <h2>Resumo da compra</h2>
+
+            <div class="separetor"></div>
+
+            <div class="desconto">
+                <p>Desconto:</p>
+                <span class="totalDesconto">-</span>
+            </div>
+
+            <div class="total">
+                <p>Subtotal:</p>
+                <span class="subtotal">R$ 0,00</span>
+            </div>
+        </div>
+
+        <div class="finalizar-btn">
+            <button>Finalizar compra</button>
+        </div>
+
+    </div>
+
+    <div class="details" id="details">
+        <div class="details-content">
+            <button onclick="fecharDetails()">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <div class="details-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis at tenetur temporibus reiciendis ut
+                    hic autem. Quod, hic a fugiat vitae quidem eveniet minima laboriosam aspernatur voluptates cum velit
+                    voluptas?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <h2>Eletrônicos</h2>
+
+        <div class="center">
+            <div class="cards-products">
+                <div class="cards-products-itens">
+                    <div class="cards-img">
+                        <img src="../../../assets/imagens/product.png" alt="">
+                    </div>
+                    <div class="cards-content">
+                        <p class="title">Tablet</p>
+                        <p class="de">R$ 499,99</p>
+                        <p class="por">R$ 299,99</p>
+                        <p class="parcela">à vista ou até 3X sem juros no cartão.</p>
+                    </div>
+                    <div class="cards-btn">
+                        <button>Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="center">
+            <section class="contato">
+                <div class="info-contato">
+                    <div class="info-contato-itens">
+                        <h2>Atendimento</h2>
+
+                        <p>(00) 9 0000-0000</p>
+                        <p>(00) 9 0000-0000</p>
+                        <p>glshopp@glshopp.com.br</p>
+                    </div>
+
+                    <div class="info-contato-itens">
+                        <h2>Sobre</h2>
+
+                        <a href="#">Sobre a GL Shopp</a>
+                        <a href="#">Termos de privacidade</a>
+                        <a href="#">Devolução</a>
+                        <a href="#">Blog</a>
+                    </div>
+
+                    <div class="info-contato-itens">
+                        <h2>Sigam-nos</h2>
+
+                        <a class="social" href="#" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a class="social" href="#" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a class="social" href="#" target="_blank">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="copy">
+            <p><span id="year"></span> | GL Variedades - Todos os direitos reservados.</p>
+        </section>
+    </footer>
+
+
+</body>
+<script src="../../../assets/js/theme.js"></script>
+<script src="../../../assets/js/year.js"></script>
+<script src="../../../assets/js/sidebar.js"></script>
+<script src="../../../assets/js/account.js"></script>
+<script src="../../../assets/js/details.js"></script>
+<script src="../../../assets/js/itens.js"></script>
+<script src="../../../assets/js/produtosInit.js"></script>
+
+</html>
