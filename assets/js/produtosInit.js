@@ -23,8 +23,8 @@ function createHTML() {
                 </div>
                 <div class="desc-p">
                     <p class="desc">${produto.name}</p>
-                    <span class="de">R$ ${produto.priceDe.toFixed(2)}</span>
-                    <span class="por">R$ ${produto.pricePor.toFixed(2)}</span>
+                    <span class="de">R$ ${produto.priceDe.toFixed(2).replace('.', ',')}</span>
+                    <span class="por">R$ ${produto.pricePor.toFixed(2).replace('.', ',')}</span>
                     <p class="parcela">${produto.desc}</p>
                 </div>
                 <div class="btn-add">
@@ -52,7 +52,7 @@ if (document.readyState == 'loading') {
     made()
 }
 
-var totalAmount = "0,00"
+var totalAmount = "0,00";
 
 
 function made() {
@@ -160,7 +160,7 @@ function atualizaCar() {
         const priceCarElement = carrinhoItem[i].getElementsByClassName('price-car')[0];
         const priceCarText = priceCarElement ? priceCarElement.innerText : '0';
 
-        const priceCarWithoutCurrency = priceCarText.includes('R$') ? priceCarText.replace("R$", "").replace(",", ".") : priceCarText;
+        const priceCarWithoutCurrency = priceCarText.includes('R$') ? priceCarText.replace("R$", "").replace(".", ",") : priceCarText;
         const priceCar = parseFloat(priceCarWithoutCurrency) || 0;
 
         const qtdProductElement = carrinhoItem[i].getElementsByClassName('qtd-product')[0];

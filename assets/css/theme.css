@@ -16,7 +16,9 @@
 .dark .auto div,
 .dark .conteiner-login form .form-control input,
 .dark .over-desc .view-desc>div,
-.dark .conteiner-cadastro form .form-control input {
+.dark .conteiner-cadastro form .form-control input,
+.dark .conteiner-recupera form .form-control input,
+.dark .menu-mobile .nav-mobile .mobile-account .mobile-btns a {
     border: 1px solid var(--light);
 }
 
@@ -27,7 +29,8 @@
 .dark #bullet1:checked~.auto .a-btn1,
 .dark #bullet2:checked~.auto .a-btn2,
 .dark #bullet3:checked~.auto .a-btn3,
-.dark .nav .header-icons .perfil .account-itens .separetor {
+.dark .nav .header-icons .perfil .account-itens .separetor,
+.dark .nav-content-two .nav-peril .perfil .drop-menu-account .btns-account .border {
     background-color: var(--light);
 }
 
@@ -36,13 +39,27 @@
 }
 
 .dark .carrinho .carrinho-item,
-.dark .summary .separetor {
+.dark .summary .separetor,
+.dark .menu-mobile .nav-mobile section {
     border-bottom: 1px solid var(--light);
 }
 
-.dark header .center .nav a,
-.dark header .center .nav .search input,
-.dark header .center .nav .search input::placeholder,
+.dark .nav-content-two .lista .lista-itens {
+    border-right: 1px solid var(--light);
+}
+
+.dark .nav-content-two .lista .lista-itens:last-child {
+    border-right: 0;
+}
+
+.dark .menu-mobile .nav-mobile .mobile-account .mobile-btns .active {
+    border: 0;
+}
+
+.dark .menu-mobile .nav-mobile section:last-child {
+    border-bottom: 0;
+}
+
 .dark .c-products .category-p .category h2,
 .dark .c-products .category-p .products .products-itens .desc-p .desc,
 .dark .info .info-t,
@@ -53,20 +70,9 @@
 .dark .info-contato-itens a,
 .dark .info-contato-itens p,
 .dark .copy p,
-.dark header .nav .header-icons i,
-.dark header .nav .search i,
 .dark .products .products-itens .desc-p .de,
 .dark .products .products-itens .desc-p .por,
-.dark header .search input,
-.dark header .search i,
-.dark header .search input::placeholder,
-.dark header .nav .logo,
 .dark .info-contato .info-contato-itens .social i,
-.dark .nav .header-icons .perfil .account-itens .ver-perfil a,
-.dark .nav .header-icons .perfil .account-itens .ver-perfil i,
-.dark .nav .header-icons .perfil .account-itens a,
-.dark .nav .header-icons .perfil .account-itens .theme p,
-.dark .nav .header-icons .perfil .account-itens label i,
 .dark .conteiner-login h1,
 .dark .conteiner-login form .form-control label,
 .dark .conteiner-login form .form-control input,
@@ -91,23 +97,52 @@
 .dark main h2,
 .dark .cards-products .cards-products-itens .cards-content .title,
 .dark .cards-products .cards-products-itens .cards-content .de,
-.dark .cards-products .cards-products-itens .cards-content .por {
+.dark .cards-products .cards-products-itens .cards-content .por,
+.dark .conteiner-recupera h1,
+.dark .conteiner-recupera form .form-control label,
+.dark .conteiner-recupera form .form-control input,
+.dark .nav-content-one .logo span,
+.dark .nav-content-one .input-search input,
+.dark .nav-content-one .input-search input::placeholder,
+.dark .nav-content-one .input-search i,
+.dark .nav-content-one .nav-icons button i,
+.dark .nav-content-one .nav-icons i,
+.dark .nav-content-two .lista .lista-itens,
+.dark .nav-content-two .lista .lista-itens a,
+.dark .nav-content-two .lista .lista-itens .drop-menu .lista-sec .lista-itens-sec a,
+.dark .nav-content-two .lista .lista-itens .theme p,
+.dark .nav-content-two .nav-peril .perfil i,
+.dark .nav-content-two .nav-peril .perfil p,
+.dark .menu-mobile .nav-mobile .mobile-account .mobile-account-perfil i,
+.dark .menu-mobile .nav-mobile .mobile-account .mobile-account-perfil p,
+.dark .menu-mobile .nav-mobile .mobile-account .mobile-btns a,
+.dark .menu-mobile .nav-mobile .mobile-content section a,
+.dark .menu-mobile .nav-mobile .mobile-content section .category-mobile .category-mobile-content i,
+.dark .menu-mobile .nav-mobile .mobile-content section .category-mobile .category-mobile-content p,
+.dark .menu-mobile .nav-mobile .mobile-content section .category-mobile .category-mobile-icon i,
+.dark .menu-mobile .nav-mobile .mobile-content section .theme p,
+.dark .menu-mobile .nav-mobile .mobile-content section .theme label i {
     color: var(--light);
 }
 
-.dark .nav .header-icons .perfil .account-itens,
 .dark .conteiner-login form,
 .dark .over-desc .view-desc,
 .dark .sidebar-car,
 .dark .carrinho,
 .dark .summary,
 .dark .conteiner-cadastro form,
-.dark .cards-products .cards-products-itens {
+.dark .cards-products .cards-products-itens,
+.dark .conteiner-recupera form,
+.dark .menu-mobile {
     background-color: var(--dark);
 }
 
 .dark .products .products-itens,
-.dark .carrinho h2 {
+.dark .carrinho h2,
+.dark .nav-content-one .input-search,
+.dark .nav-content-two .lista .lista-itens .drop-menu,
+.dark .nav-content-two .nav-peril .perfil .drop-menu-account,
+.dark .menu-mobile .nav-mobile .mobile-account {
     background-color: var(--dark2);
 }
 

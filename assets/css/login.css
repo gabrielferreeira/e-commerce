@@ -91,3 +91,35 @@
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+.login-google {
+    margin: 0 auto;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 8px;
+    background-color: var(--blue);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.login-google:hover {
+    background-color: var(--blue2);
+}
+
+.login-google .google-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-google .google-content i {
+    font-size: 1.2rem;
+    color: var(--light);
+}
+
+.login-google .google-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--light);
+    padding-left: 10px;
+}

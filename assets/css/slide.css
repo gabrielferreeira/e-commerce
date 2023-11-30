@@ -1,5 +1,5 @@
 main {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 section.slider {
@@ -106,6 +106,13 @@ section.slider {
 .next {
     right: 30px;
 }
+
+@media screen and (max-width: 900px) {
+    main {
+        margin-top: 60px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .desk {

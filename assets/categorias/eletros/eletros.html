@@ -26,58 +26,191 @@
 
 <body>
     <header>
-        <div class="margin">
-            <div class="nav">
-                <a href="../../../index.html" class="logo">GL Shopp</a>
-
-                <div class="header-icons">
-                    <div>
-                        <a href="../../../assets/account/cadastro.html">Cadastrar</a>
-                        <a href="../../../assets/account/login.html">login</a>
-                        <div class="perfil">
-                            <i title="Perfil" class="bi bi-person-circle" onclick="abrirConfig()"></i>
-
-                            <div class="account-itens" id="account-itens">
-                                <div class="ver-perfil">
-                                    <a href="#">Ver perfil</a>
-
-                                    <i class="bi bi-x" onclick="fecharConfig()"></i>
-                                </div>
-                                <div class="separetor"></div>
-                                <a href="#">Favoritos <i class="bi bi-heart"></i></a>
-                                <a href="#">Suas compras <i class="bi bi-cart2"></i></a>
-
-                                <div class="theme">
-                                    <p>Modo escuro</p>
-
-                                    <input type="checkbox" name="change-theme" id="change-theme">
-                                    <label for="change-theme">
-                                        <i class="bi bi-sun"></i>
-                                        <i class="bi bi-moon"></i>
-                                    </label>
-                                </div>
-
-                                <div class="logout">
-                                    <a href="#">Sair <i class="bi bi-box-arrow-right"></i></a>
-                                </div>
-                            </div>
+        <div class="header">
+            <nav>
+                <div class="nav-content-one">
+                    <a href="index.html" class="logo">
+                        <div class="cart-nav">
+                            <i class="bi bi-cart"></i>
                         </div>
-                        <div class="not-sacola">
-                            <i title="Carrinho de Compras" class="bi bi-bag sacola" onclick="openCar()"></i>
-                            <div class="qtd-sacola">1</div>
+                        <span>GL Shopp</span>
+                    </a>
+                    <div class="input-search">
+                        <input type="text" placeholder="Buscando por algo?">
+                        <i class="bi bi-search"></i>
+
+                        <div class="drop-result">
+                            <nav class="nav-result">
+                                <ul class="lista-result">
+                                    <li class="itens-result">
+                                        <a href="#">
+                                            <div class="content-result">
+                                                <img src="assets/imagens/product.png" alt="">
+                                                <p>Camisetas</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-
-                    <div class="search">
-                        <input type="text" placeholder="Ex:. Camisas, moletons...">
-                        <i class="bi bi-search"></i>
+                    <div class="nav-icons">
+                        <button class="btn-menu-mobile" onclick="openMenuMobile()">
+                            <i class="bi bi-list"></i>
+                        </button>
+                        <button style="display: none;" class="btn-menu-mobile exit-menu" onclick="exitMenuMobile()">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                        <i title="Notificações" class="bi bi-bell-fill noti"></i>
+                        <div class="not-sacola">
+                            <i title="Carrinho de compras" class="bi bi-basket-fill sacola" onclick="openCar()"></i>
+                            <div class="qtd-sacola" id="qtd-sacola"></div>
+                        </div>
                     </div>
                 </div>
 
-            </div>
+                <div class="nav-content-two">
+                    <ul class="lista">
+                        <li class="lista-itens" id="drop">
+                            <p>Categorias <i class="bi bi-chevron-down"></i></p>
+
+                            <div class="drop-menu" id="drop-menu">
+                                <ul class="lista-sec">
+                                    <li class="lista-itens-sec">
+                                        <a href="assets/categorias/eletros/eletros.html">Eletrônicos</a>
+                                    </li>
+
+                                    <li class="lista-itens-sec">
+                                        <a href="assets/categorias/acessorios/acess.html">Acessórios</a>
+                                    </li>
+
+                                    <li class="lista-itens-sec">
+                                        <a href="assets/categorias/roupas/roupa.html">Roupas</a>
+                                    </li>
+
+                                    <li class="lista-itens-sec">
+                                        <a href="assets/categorias/infantil/infantil.html">Infantil</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li class="lista-itens">
+                            <a href="#">Ajuda</a>
+                        </li>
+
+                        <li class="lista-itens">
+                            <p>Seja um vendedor</p>
+                        </li>
+
+                        <li class="lista-itens">
+                            <p>Minhas compras</p>
+                        </li>
+
+                        <li class="lista-itens">
+                            <p>Favoritos</p>
+                        </li>
+
+                        <li class="lista-itens">
+                            <div class="theme">
+                                <p>Modo escuro</p>
+
+                                <input type="checkbox" name="change-theme" id="change-theme">
+                                <label for="change-theme">
+                                    <i class="bi bi-sun"></i>
+                                    <i class="bi bi-moon"></i>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="nav-peril">
+                        <div class="perfil drop-account" onmouseover="showMenu()" onmouseout="hideMenu()">
+                            <i class="bi bi-person-fill"></i>
+                            <p>Cadastre-se ou entre</p>
+
+                            <div class="drop-menu-account">
+                                <div class="btns-account">
+                                    <a href="assets/account/cadastro.html">Cadastrar</a>
+                                    <div class="border"></div>
+                                    <a href="assets/account/login.html">Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
 
+        <div class="menu-mobile">
+            <div class="nav-mobile">
+                <div class="mobile-account">
+                    <div class="mobile-account-perfil">
+                        <i class="bi bi-person-fill"></i>
+                        <p>Cadastre-se ou entre</p>
+                    </div>
+                    <div class="mobile-btns">
+                        <a class="active" href="assets/account/cadastro.html">Cadastrar</a>
+                        <a href="assets/account/login.html">Entrar</a>
+                    </div>
+                </div>
+                <div class="mobile-content">
+                    <section>
+                        <a href="index.html">
+                            <i class="bi bi-house-door"></i>
+                            <p>Home</p>
+                        </a>
+                        <a href="index.html">
+                            <i class="bi bi-bag"></i>
+                            <p>Minhas compras</p>
+                        </a>
+                        <a href="index.html">
+                            <i class="bi bi-bookmark"></i>
+                            <p>Favoritos</p>
+                        </a>
+                        <a href="index.html">
+                            <i class="bi bi-shop"></i>
+                            <p>Seja um vendedor</p>
+                        </a>
+                        <a href="index.html">
+                            <i class="bi bi-info-circle"></i>
+                            <p>Ajuda</p>
+                        </a>
+                    </section>
+                    <section>
+                        <div class="category-mobile">
+                            <div class="category-mobile-content">
+                                <i class="bi bi-list-task"></i>
+                                <p>Categorias</p>
+                            </div>
+                            <div class="category-mobile-icon">
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="theme">
+                            <p>Modo escuro</p>
+
+                            <input type="checkbox" name="change-theme" id="change-theme">
+                            <label for="change-theme">
+                                <i class="bi bi-sun"></i>
+                                <i class="bi bi-moon"></i>
+                            </label>
+                        </div>
+
+                        <div class="exit-mobile">
+                            <a class="exit" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <p>Sair</p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </header>
+
     <div class="sidebar-car" id="carrinho">
         <div class="nav-car">
             <i class="bi bi-x-lg" onclick="exitCar()"></i>
@@ -202,5 +335,6 @@
 <script src="../../../assets/js/details.js"></script>
 <script src="../../../assets/js/itens.js"></script>
 <script src="../../../assets/js/produtosInit.js"></script>
+<script src="../../../assets/js/menu.js"></script>
 
 </html>

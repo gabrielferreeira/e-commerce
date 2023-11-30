@@ -16,3 +16,13 @@ function exitCar() {
         document.body.style.overflow = "auto";
     }, 300);
 }
+
+/* ---------------------------------------------------------------------------- */
+
+function showMenu() {
+    document.querySelector('.drop-menu-account').style.display = 'block';
+}
+
+function hideMenu() {
+    document.querySelector('.drop-menu-account').style.display = 'none';
+}

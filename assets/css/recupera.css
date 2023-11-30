@@ -1,0 +1,69 @@
+.conteiner-recupera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 2%;
+}
+
+.conteiner-recupera h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.conteiner-recupera form {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--light);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 1rem;
+}
+
+
+.conteiner-recupera form .form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.conteiner-recupera form .form-control label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.conteiner-recupera form .form-control input {
+    background-color: transparent;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.conteiner-recupera form .btn-recupera {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.conteiner-recupera form .btn-recupera button {
+    background-color: var(--blue);
+    color: var(--light);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 1rem;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.conteiner-recupera form .btn-recupera button:hover {
+    background-color: var(--blue2);
+}
+
+.cod {
+    display: none;
+}
